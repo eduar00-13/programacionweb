@@ -1,0 +1,46 @@
+#categorias{
+    width: 900px;
+    height: auto; overflow: hidden;
+    border: 0px solid;
+    margin-top: 15px;
+}
+#formulario{
+    width: 432px;
+    height: -200px;
+    overflow: hidden;
+  
+    padding: 40px;
+    float: left
+}
+ /*define una etiqueta para muchos elementos de formulario*/
+input[type="text"]{
+    border: 1px solid #c1c1c1; padding: 6px;
+    width: 97%;
+}
+textarea{
+    border: 1px solid #c1c1c1; padding: 6px;
+    width: 97%;
+}
+.enviar{
+    padding: 10px 20px;
+    background: #006699;
+    color: #fdfdfd;
+    font-size: 16px;
+}
+.Borrar{
+    padding: 10px 20px;
+    background: #006699;
+    color: #fdfdfd;
+    font-size: 16px;
+}
+#form{}
+#datos{
+    margin-top: 30px;
+}
+#der{
+    width: 360px;
+    height: 380px;
+    border: 1px solid #ccc;
+    float: right;
+    color: 
+}

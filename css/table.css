@@ -1,0 +1,23 @@
+body {
+    font-family: 'fantasy;';
+}
+/*se puede usar para diseñar encabezados*/
+#main-container{
+   margin: auto;
+   width: 600px;
+}
+table{
+   background-color: ForestGreen;
+  text align: center;
+  border-collapse: collapse;
+    width: 60%;
+    color: white;
+}
+th, td {
+ padding: 20px;
+}
+thead{
+    background-color: DimGray;
+    border-bottom: solid 5px #B8860B;
+    color: white;
+}

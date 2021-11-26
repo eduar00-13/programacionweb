@@ -1,0 +1,253 @@
+<!–– Doctype tipo de documento (versión de html empleada)––>
+<!DOCTYPE html>
+<!–– Esta etiqueta engloba todo el documento ––>
+<html lang="es">
+<!––  La etiqueta head sirve para información sobre el documento ––>
+<head>
+   <!–– La metaetiqueteas sirve para información sobre el documento ––>
+<!––El meta charset. Indica la codificación de caracteres––>
+    <meta charset="UTF-8">
+    <!––Esta etiqueta permite la descripción del contenido––>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!––Este es otro meta-tag útil en la página HTML y este meta-tag se relaciona mayormente con el navegador.
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <!––Tittle se utiliza para definir un título para el documento.––>
+    <title>Brandon Eduardo</title>
+  <!––Link Rel es un atributo del lenguaje de marcado HTML que, en un enlace entre dos documentos, describe la relación que mantiene el documento de destino con el documento presente (el que enlaza).––>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/table.css">
+     <link rel="stylesheet" href="css/formulaio.css">
+    <!––Estyle es el elemento encargado de indicar la información de estilo.––>
+ <style> 
+ h7{
+color: blue;
+font-size: 25px;
+text-align: center;
+    padding: 40px;
+
+ }
+ h8{
+color: DarkRed;
+font-size: 25px;
+text-align: center;
+    padding: 40px;
+
+ }
+ h9{
+color: Purple;
+font-size: 25px;
+text-align: center;
+    padding: -9px;
+
+ }
+ table, th, td {
+    border: 6px blue;
+    padding: 15px;
+  margin: auto;
+}
+</style>
+</head>
+<!––Body define la parte corporal o cuerpo de un documento .––>
+<body style="background-color:rgb(240, 248, 255);">
+
+<!––Header representa un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, así como también un logo, un formulario de búsqueda, un nombre de autor y otros componentes––>
+<header>
+    <!–– Nav representa una sección de una página cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual o a otros documentos––>
+        <nav>
+ <!–– A href crea un enlace a otras páginas de Internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL.––>
+            <a href="#">Inicio</a>
+            <a href="tablas.html">Carreras</a>
+            <a href="#">Portafolio</a>
+            <a href="#">Servicios</a>
+            <a href=>Contacto</a>
+ 
+        </nav>
+ <!––Section representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema–>
+         <section class="textos-header">
+            <!––Las etiquetas H + número nos permiten indicar la importancia del título y para estructurar el contenido, de esta forma ayudamos a los bots a entender la importancia del contenido.–>
+            <h1>UNAM </h1>
+            <h2>Universidad Nacional Autónoma de México</h2>
+        </section>
+<!––Div es un elemento que es usado mayoritariamente para agrupar otros elementos y actuar como plantilla de otros controles. La etiqueta div nos ayuda a estructurar el documento en secciones.Recalcar que el class atributo HTML se utiliza para especificar una clase para un elemento HTML.–>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><!––SVG es un lenguaje basado en XML-para describir imágenes vectoriales–><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><!––La etiqueta path permite dibujar cualquier tipo de curva.–><path d="M0.00,49.98 C158.29,-92.27 257.05,269.89 503.67,-0.48 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #F0FFFF;"></path></svg></div>
+    </header>
+<!––El elemento HTML main representa el contenido principal del body de un documento o aplicación. El área principal del contenido consiste en el contenido que está directamente relacionado, o se expande sobre el tema central de un documento o la función central de 
+una aplicación.–>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Sobre Nosotros</h2>
+            <div class="contenedor-sobre-nosotros">
+                <!––IMG ermite insertar o definir una imagen personalizada.–>
+                <img src="img/titu3.jpg" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                     <!––Spam utilizada para estilos de una parte del texto–>
+                    <h3><span>1</span>Identidad</h3>
+                    <!––La etiqueta p define un trozo de texto como párrafo.–> 
+                    <p>La Universidad Nacional Autónoma de México fue fundada el 21 de septiembre de 1551 con el nombre de la Real y Pontificia Universidad de México. Es la más grande e importante universidad de México e Iberoamérica. Símbolos de identidad universitaria, el escudo que muestra el lema “Por mi raza hablará el espíritu”, ha quedado grabado por décadas en las vidas de millones de mexicanos y mexicanas.</p>
+                    
+                    <h3><span>2</span>Proposito</h3>
+                    <p>Tiene como propósito primordial estar al servicio del país y de la humanidad, formar profesionistas útiles a la sociedad, organizar y realizar investigaciones, principalmente acerca de las condiciones y problemas nacionales, y extender con la mayor amplitud posible, los beneficios de la cultura.</p>
+                </div>
+            </div>
+        </section>
+         <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Instalaciones</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="img/u1.jpg" alt="">
+                        <div class="hover-galeria"><img src="img/galle.png" alt="">
+                            <p>Gallery</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/facultad.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/galle.png" alt="">
+                            <p>Gallery</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/u3.jpeg" alt="">
+                        <div class="hover-galeria">
+                          <img src="img/galle.png" alt="">
+                            <p>Gallery</p>
+                        </div>
+                   
+                    
+                </div>
+            </div>
+        </section>
+         </main>
+ <!––BR usado para saltos de línea.–> 
+<br><br>
+        <h2 class="titulo">PROMEDIO LICENCIATURAS DEMANDANTES</h2>
+<!––Table ermite la creación o definición de una tabla.–>  
+<table cellspacing="10" cellpadding="10" border="3">
+    <!––El elemento HTML fila de tabla (table row) define una fila de celdas en una tabla.–> 
+<tr>
+    <!–– El elemento td representa a una celda de datos de una tabla ( table ).–> 
+ <td align="center">
+ Licenciaturas
+ </td>
+ <td align="center">
+ <table cellspacing="2" cellpadding="2" border="1">
+ <tr>
+ <td>Medicina</td>
+ <td>8.95</td>
+ </tr>
+ <tr>
+ <td>Cirujano Dentista</td>
+ <td>8.38</td>
+ </tr>
+ <tr>
+ <td>Psicología</td>
+ <td>8.37</td>
+ </tr>
+ <tr>
+ <td>Contaduría</td>
+ <td>8.25</td>
+ </tr>
+ <tr>
+ <td>Derecho</td>
+ <td>8.17</td>
+ </tr>
+  <tr>
+ <td>Medicina Veterinaria y Zootecnia</td>
+ <td>8.11</td>
+ </tr>
+ </table>
+ </td>
+</tr>
+</table> 
+
+  <br><br>
+  <h2 class="titulo">INFORMACION</h2>
+</table>
+
+<table class="default">
+    <!–– Theadetiqueta se utiliza para agrupar el contenido del encabezado en una tabla HTML.–> 
+ 
+  <thead>
+
+    <tr>
+  <!–– Th es la etiqueta que se utiliza para agrupar el contenido del encabezado en una tabla HTML.–>
+      <th>Datos</th>
+
+      <th>Descripción</th>
+
+    </tr>
+
+  </thead>
+ <!–– Tbody etiqueta se utiliza para agrupar el contenido del cuerpo en una tabla HTML..–>
+  <tbody>
+
+    <tr>
+
+      <th colspan="2" scope="rowgroup">Cultura</th>
+
+    </tr>
+
+    <tr>
+
+      <td>TV UNAM</td>
+
+      <td>Es la plataforma multimedia de una productora de contenido preponderante, aunque no exclusivamente, audiovisual</td>
+
+    </tr>
+
+  </tbody>
+
+  <tbody>
+
+    <tr>
+
+      <th colspan="2" scope="rowgroup">Deportes</th>
+
+    </tr>
+
+    <tr>
+
+      <td>Club Pumas Soccer</td>
+
+      <td>Existen equipos históricos en el futbol mexicano, pero como Pumas, ninguno. Nuestra Universidad, nuestra historia y 
+      tradición, nuestros colores y nuestra cantera avalan lo dicho. Pero hay algo aún más fuerte que nos hace únicos: nuestra 
+  capacidad de formación.</td>
+
+    </tr>
+
+    <tr>
+
+      <td>Futbol Americano</td>
+
+      <td> Es un deporte de tradición en la UNAM. 86 años de existencia lo respaldan.</td>
+
+    </tr>
+
+  </tbody>
+  <tbody>
+    <tr>
+      <th colspan="2" scope="rowgroup">Comunidad</th>
+    </tr>
+    <tr>
+      <td>Estudiantes</td>
+      <td>Servicios escolares, servicio social, servicios médicos</td>
+    </tr>
+    <tr>
+      <td>Académicos</td>
+      <td>Normatividad, dirección general del personal, calendario académicos</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th colspan="2" scope="rowgroup">Oferta educativa</th>
+    </tr>
+    <tr>
+      <td>Bachillerato</td>
+      <td>Bachillerato a distancia B@UNAM, CCH UNAM, prepas UNAM</td>
+    </tr>
+  </tbody>
+</table>
+ <br><br>
+      </body>
+</html>

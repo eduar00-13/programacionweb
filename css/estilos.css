@@ -1,0 +1,203 @@
+/* Selector universal
+Se utiliza para seleccionar todos los elementos de la página.*/
+* {
+    margin: 0;    /* % para todos los lados */
+    padding: 0;   /* aplica un % de padding en todos los lados*/
+    box-sizing: border-box; /*debe calcular el ancho y el alto total de un elemento.*/
+    border: 0px solid #000;   /* La propiedad borderpermite definir de golpe todos los bordes en una única regla de la hoja de estilos. */
+
+}
+/*El selector (en el ejemplo sería: “body”), el cual le dice al navegador la parte del documento que se verá afectada por la regla*/
+body {
+    font-family: 'open sans';
+}
+/*Para que el navegador no confunda este selector con los otros tipos de selectores, se prefija el valor del atributo class con un
+punto (.), EJMPLO: .contenedor; todos los estilos que se van a aplicar al elemento*/
+.contenedor {
+    padding: 60px 0;
+    width: 90%; /* especifica la anchura del area de contenido de un elemento*/
+    max-width: 1000px; /*  Evita que el valor usado de la propiedad sea mayor que el valor especificado por .max-width widthmax-width*/
+    margin: auto;
+    overflow: hidden; /* a propiedad abreviada de CSS establece el comportamiento deseado para el desbordamiento de un elemento, es decir, 
+    cuando el contenido de un elemento es demasiado grande para caber en su contexto de formato de bloque , en ambas direcciones.overflow*/
+}
+.titulo {
+    color: #642a73; 
+    font-size: 30px; /* especifica la dimensión de la letra. */
+    text-align: center; /* alinea un texto*/
+    margin-bottom: 60px; /* es la propiedad de un elemento que establece el espacio requerido en la parte inferior de un elemento.*/
+}
+/* Header */
+
+header {
+    width: 100%;
+    height: 600px; /* altura */
+    background: #22c1c3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(360, 85%, 80%, 0.159), hsla(217, 45%, 52%, 0.164)), url(../img/unam.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(320, 75%, 30%, 0.159), hsla(217, 45%, 52%, 0.164)), url(../img/unam.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed; /* determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará 
+    con su bloque */
+    position: relative;
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color:#800000;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/* etiqueta main*/
+main .sobre-nosotros{
+    padding: 30px 0 60px 0; /* aplica un % de padding en todos los lados*/
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly; /* justify-content define cómo el navegador distribuye el espacio entre y 
+    alrededor de los elementos flex, a lo largo del eje principal de su contenedor.*/
+}
+.imagen-about-us{
+    width: 48%;
+}
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+.contenido-textos h3 span{
+    background: #FF0000;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;  /*  establece los tipos de visualización interna y externa de un elemento. */
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);  /* añade efectos de sombra alrededor del marco de un elemento. */
+    margin-right: 5px;
+}
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+/* Galeria */
+.portafolio{
+    background: #FF6347;
+}
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;  /* es la propiedad de un elemento que establece el espacio requerido en la parte
+     inferior de un elemento */
+    overflow: hidden;   /* especifica: si recortar contenido, dibujar barras de desplazamiento 
+    o mostrar el contenido excedente en un elemento a nivel de bloque. */
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);  /* añade efectos de sombra alrededor del marco de un elemento. */
+}
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* e usa para especificar cómo se debe cambiar el tamaño de un <img> o <video> 
+    para que se ajuste a su contenedor */
+    display: block;      /* establece los tipos de visualización interna y externa de un elemento.  */
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;                /* pecifica parte de la posición de un elemento posicionado.  */
+    transform: scale(0);   /* transformte permite modificar el espacio de coordenadas del modelo de formato CSS visual */
+    background: hsla(273,91%,27%, 0.7);  /* especifica la opacidad del color */
+    transition: transform .5s;  /* Galeria */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria img{
+    width: 50px;
+}
+.hover-galeria p{
+    color: #fff;
+}
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+
+
+.primera {
+      color: #2F4F4F;
+  background-color: AliceBlue;
+  position: relative;
+  left: 20px;
+  list-style:square inside;
+  margin:0;
+padding-left: 1.5em;
+line-height: 1.5em;
+}
+.segunda {
+    color: #2F4F4F;
+    background-color: AliceBlue;
+  position: relative;
+  left: 46px;
+  list-style:square inside;
+margin:5;
+padding-left: 1.5em;
+line-height: 1.5em;
+}
+.tercera {
+    color: #2F4F4F;
+    background-color: AliceBlue;
+  position: relative;
+  left: 36px;
+  list-style:square inside;
+margin:5;
+padding-left: 1.5em;
+line-height: 1.5em;
+}
